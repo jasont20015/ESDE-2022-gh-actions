@@ -1,0 +1,13 @@
+name: ESDE GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [ push ]
+jobs:
+  explore-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the world!
+        run: date
+      - name: printing test
+        run: echo "test"
+      - name: Printing job status
+        run: echo "🍏 This job's status is ${{ job.status }}."
